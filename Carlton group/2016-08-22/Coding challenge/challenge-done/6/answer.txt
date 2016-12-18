@@ -1,0 +1,21 @@
+6.	Acme requires that certain processes take place when a new department is created and when a department
+is being removed or shifted to a new location. Describe what you would consider the best implementation to
+effectively handle this requirement.
+
+
+Answer:
+
+    At first, I would consider having all requirements in one place. Have been using JIRA for issue management, but
+    there are much more tools available: https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
+
+
+    From the perspective of the development job that needs to be done:
+
+    Changing the behaviour is not a problem at all. Especially, if any PHP framework is being used.
+    It is most likely about changing the action code of the controller.
+
+    However, sometimes development inside a database should be made instead of PHP code. For example,
+    triggers, functions, procedures may be added.
+
+    It really depends on what Acme wants to be done: Sending emails? Running shell scripts inside their web server?
+    Calling remote web service? Sending messages? Calling somebody? Making lamps in the office flashing? All is possible.

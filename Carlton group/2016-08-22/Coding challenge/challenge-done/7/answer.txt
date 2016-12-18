@@ -1,0 +1,11 @@
+7.	How would you best handle a situation where multiple administrators
+are making changes to the organizational structure at the same time?
+
+
+Answer:
+    - Each administrator must be logged in to the system with own credentials before changing anything.
+        This allows to place a mark on who changed what.
+    - Some extra user roles could be introduced, because sometimes administrators have data access levels set to them as well.
+        This allows to deny and/or allow access to sensitive information management for particular subgroups.
+    - Transactions must be used in code in order to protect data integrity.
+    - Suspicious actions could be logged if needed.

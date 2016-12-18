@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+    <style>
+        li.active, li.active a {
+            color: #008000;
+        }
+    </style>
+</head>
+<body>
+<p>The activated tab will become green.</p>
+<div id="tabs">
+    <ul class="tabs-nav">
+        <li class="tabs-selected">
+            <a href="#one">One</a>
+        </li>
+        <li>
+            <a href="#two">Two</a>
+        </li>
+        <li>
+            <a href="#three">Three</a>
+        </li>
+    </ul>
+
+    <div id="one">
+        <button type="button">Activate Tab Three!</button>
+    </div>
+
+    <div id="two">
+
+    </div>
+
+    <div id="three">
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $("#one button").bind("click", function (event) {
+        $("a[href=#three]").parent("li").addClass("active");
+    });
+</script>
+</body>
+</html>

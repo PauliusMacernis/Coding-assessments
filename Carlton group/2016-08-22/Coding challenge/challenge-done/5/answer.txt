@@ -1,0 +1,16 @@
+5.	You need to create a page that allows easy editing of the Acme Company's organizational structure.
+Describe how you would structure your code and what design pattern you would utilize in your approach.
+
+Answer:
+    The key here is CRUD (Create, Read, Update, Delete) and connection with DB.
+    Again, multiple options on how to go further, but I would prefer doing this way:
+    1) Would use existing third-party libraries and so would use Composer to manage all: https://getcomposer.org/
+    2) Would go there and would look for the best package for CRUD: https://packagist.org/search/?q=CRUD
+    3) Would consider using the best finding of step 2 OR using Doctrine ORM, - would pick the less time consuming
+    3) Users will fill web forms to create/edit entries so I would look to this as well:
+        https://packagist.org/search/?q=form
+    4) After all, I would ask about how big this project is about to be.
+        If the project seems to be for several months to develop
+        then I would most likely consider doing all by using one of popular web frameworks, for example - Symfony.
+        If I would be working in the team of developers then choosing framework is the question for the entire team as
+        the development should be fast for the entire team, not for a one member of the team only.

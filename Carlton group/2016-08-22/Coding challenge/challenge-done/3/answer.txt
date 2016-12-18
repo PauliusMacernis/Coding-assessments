@@ -1,0 +1,22 @@
+EXPLAIN WHY YOU CHOSE THE DESIGN PATTERN YOU DID IN #1
+
+Answer:
+    At first, it is important to note that there are many ways of how the hierarchical data structures are being modeled.
+    I chose this design pattern based on the situation where key information for me was:
+
+    - "organization structure" - which means this is not about solving hierarchical problems of big data
+        (big data requires much more efficient and versatile algorithms than the one I took to solve my problem)
+    - "hierarchy of the company" - this says me that the company has the only head, for example: CEO. The rest is under.
+        (this simplifies the algorithm again)
+    - time I have
+        (would love to polish the user interface, and the algorithm, and the application flow, but the time says "later... if")
+
+
+
+...AND HOW IT DID AFFECT YOUR RESPONSE TO #2.
+
+Answer:
+    - I had to add additional parameter to the getHeadOfHierarchy function to do not repeat myself by coding same lines
+    , - DRY coding style
+    - I had to make the additional function for encapsulation of the new functionality (searching department by name)
+    , - SOLID principle touched
