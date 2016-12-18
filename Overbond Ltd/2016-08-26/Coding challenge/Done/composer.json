@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
+
+    "require": {
+        "league/csv": "^8.1",
+        "aura/cli": "^2.1"
+    }
+}
